@@ -29,7 +29,7 @@ server.get("/", (req, res) => {
   return res.json(reponse);
 });
 
-server.get("/films", authentification, (req, res) => {
+server.get("/films", (req, res) => {
   return res.json({ msg: "ok films" });
 });
 server.get("/films/:id", (req, res) => {
