@@ -1,7 +1,6 @@
 // Importation des librairies
 const express = require("express");
 const dotenv = require("dotenv");
-dotenv.config();
 const path = require("path");
 const { log } = require("console");
 
@@ -19,7 +18,7 @@ function authentification(req, res, next) {
   next();
 }
 /*
- * Routes servant à récuperer tous les folms de la base de données.
+ * Routes servant à récuperer tous les films de la base de données.
  */
 // get
 server.get("/", (req, res) => {
